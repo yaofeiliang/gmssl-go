@@ -1,0 +1,47 @@
+CA:
+  IsUse: "true"
+  caPrivPath: "./caKey.crt"
+  caPubKeyPath: "./caPubPem.crt"
+  caCommonName: "localhost"
+  Country: "CN"
+  Organization: "test"
+  caTemplateReq: "./caReqPem.csr"
+  CertificateInfo:
+    CaCertPath: "./caCertPem.crt"
+    EndYear: 2023
+    EndMonth: 10
+    EndDay: 10
+
+Server:
+  IsUse: "true"
+  caPrivPath: "./caKey.crt"
+  caPubKeyPath: "./caPubPem.crt"
+  caCertPath: "./caCertPem.crt"
+  serverPrivPath: "./serverKey.crt"
+  serverPubKeyPath: "./serverPubPem.crt"
+  CommonName: "server.io"
+  Country: "CN"
+  Organization: "Test"
+  serverReqPem: "./serverReqPem.csr"
+  CertificateInfo:
+    ServerCertPem: "./serverCertPem.crt"
+    EndYear: 2023
+    EndMonth: 10
+    EndDay: 10
+
+Client:
+  IsUse: "true"
+  caPrivPath: "./caKey.crt"
+  caPubKeyPath: "./caPubPem.crt"
+  caCertPath: "./caCertPem.crt"
+  clientPrivPath: "./clientKey.crt"
+  clientPubKeyPath: "./clientPubPem.crt"
+  CommonName: "client.io"
+  Country: "CN"
+  Organization: "Test"
+  clientReqPem: "./clientReqPem.csr"
+  CertificateInfo:
+    clientCertPem: "./serverCertPem.crt"
+    EndYear: 2023
+    EndMonth: 10
+    EndDay: 10
